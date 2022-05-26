@@ -1,0 +1,168 @@
+.subscribe {
+    position: relative;
+
+
+    .subscribe-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        transform: rotate(180deg);
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+
+        .wrap-subscribe {
+            min-height: 360px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .left-part {
+                max-width: 690px;
+                padding-right: 50px;
+
+                .section-title {
+                    line-height: 55px;
+                    text-align: left;
+                    padding-bottom: 15px;
+                    padding-top: 0;
+                }
+
+                .subtitle {
+                    color: #fff;
+                    font-size: 17px;
+                    line-height: 24px;
+                }
+            }
+
+            .right-part {
+                form {
+                    display: flex;
+                    align-items: center;
+
+                    input {
+                        height: 60px;
+                        border: 0;
+                        background: transparent;
+                        width: 270px;
+                        border: 1px solid #C9C7C7;
+
+                    }
+
+                    input[type="email"] {
+                        padding: 0 20px;
+                        color: #fff;
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+
+                    input[type="email"]::placeholder {
+                        color: #fff;
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+
+                    .button {
+                        height: 60px;
+                        line-height: unset;
+                        width: 160px;
+                        border: 0;
+                        cursor: pointer;
+                        background: #fff;
+                        text-transform: none;
+                        font-size: 16px;
+                    }
+
+                    .button:before {
+                        background: #06CCFF;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.subscribe:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background: $blue;
+    opacity: 0.9;
+}
+
+
+@media screen and (max-width: 991px) {
+
+    .subscribe .container .wrap-subscribe {
+        flex-direction: column;
+        justify-content: center;
+
+        .left-part {
+            padding-right: 0;
+            text-align: center;
+            margin-bottom: 20px;
+            max-width: 480px;
+
+            .section-title {
+                text-align: center;
+                line-height: 42px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .subscribe .container .wrap-subscribe {
+        height: 320px;
+    }
+
+    .subscribe .container .wrap-subscribe .left-part .section-title {
+        line-height: 30px;
+    }
+
+    .subscribe .container .wrap-subscribe .right-part form {
+        flex-direction: column;
+
+        input {
+            height: 50px;
+        }
+
+        .button {
+            height: 50px;
+        }
+
+        input[type="email"] {
+            min-width: 300px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+    .subscribe .container .wrap-subscribe .left-part .subtitle {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .subscribe .container .wrap-subscribe .right-part form input[type="email"]::placeholder,
+    .subscribe .container .wrap-subscribe .right-part form input[type="email"] {
+        font-size: 13px;
+    }
+
+    .subscribe .container .wrap-subscribe .right-part form .button {
+        width: 200px;
+        font-size: 12px;
+    }
+}

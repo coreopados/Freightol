@@ -1,0 +1,192 @@
+.registro-page {
+
+
+    .first-section {
+        position: relative;
+
+        form {
+            max-width: 960px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: column;
+
+            p {
+                max-width: 960px;
+                margin-right: 0;
+
+                label {
+                    max-width: 300px;
+                    width: 100%;
+                    display: flex;
+                    font-size: 14px;
+                    line-height: 26px;
+                    position: relative;
+                    height: 24px;
+                    color: $blue;
+                }
+
+                label:before {
+                    content: '';
+                    display: inline-block;
+                    width: 23px;
+                    height: 23px;
+                    padding: 0;
+                    margin-right: 10px;
+                    background: $grey;
+                    border: 1px solid #C9C7C7
+                }
+
+                input[type='checkbox']:checked+label:after {
+                    content: url('../img/Icons/checked.svg');
+                    width: 20px;
+                    position: absolute;
+                    top: 2px;
+                    left: 3px;
+                }
+
+                input:not([type='submit']):nth-of-type(2) {
+                    margin-right: 30px;
+                }
+
+                input:not([type='submit']) {
+                    background: $grey;
+                }
+
+                input[type='checkbox'] {
+
+
+                    display: none;
+                }
+
+                input {
+                    max-width: 300px;
+                    width: 100%;
+                }
+
+
+                .button {
+                    margin-left: auto;
+                    margin-right: auto;
+                    background: #fff;
+                    margin-top: 20px;
+                }
+            }
+
+            p:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
+        .title-block {
+            margin-bottom: 80px;
+
+            .text-block {
+                grid-template-columns: repeat(1, 1fr);
+                width: 100%;
+                margin-bottom: 0;
+
+
+            }
+        }
+
+
+    }
+
+    .first-section:before {
+        content: '';
+        width: 100%;
+        position: absolute;
+        top: -30px;
+        height: 30px;
+        background: $grey;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+
+
+
+    .registro-page .first-section form p label,
+    .registro-page .first-section form p input {
+        max-width: 280px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .registro-page .first-section form p {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .registro-page .first-section form {
+        max-width: 500px;
+    }
+
+    .registro-page .first-section form p label,
+    .registro-page .first-section form p input {
+        max-width: 500px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .registro-page .first-section form {
+        padding: 0 20px;
+    }
+
+    .registro-page .first-section:before {
+        height: 15px;
+        top: -15px;
+    }
+
+    .registro-page .first-section .title-block {
+        margin-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .registro-page .first-section form p input:not([type='submit']) {
+        height: 50px;
+    }
+
+    .registro-page .first-section form {
+        margin-top: 25px;
+        padding-bottom: 40px;
+    }
+
+    .registro-page .first-section form p label,
+    .registro-page .first-section form p input {
+        margin-bottom: 15px;
+    }
+
+    .registro-page form p input:not([type='submit']),
+    .contacto-page form p input:not([type='submit']) {
+        font-size: 14px;
+    }
+
+    .registro-page .first-section form p label {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .registro-page .first-section form {
+        padding: 0 15px 40px;
+    }
+
+    .registro-page .first-section .title-block {
+        margin-bottom: 15px;
+
+        .title {
+            margin-bottom: 0;
+        }
+    }
+
+    .registro-page .first-section form p .button {
+        margin-top: 10px;
+    }
+}

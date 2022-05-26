@@ -1,0 +1,39 @@
+.first-section {
+
+    .picture-block {
+        height: 420px;
+        position: relative;
+
+        .main-section-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover
+        }
+    }
+
+
+    .video-block {
+        height: 420px;
+        position: relative;
+
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover
+        }
+    }
+}
+
+.aereo-page .first-section .picture-block .main-section-img {
+    object-position: right;
+}
+
+.home-page .first-section .title {
+    margin-bottom: 0;
+}

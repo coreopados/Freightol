@@ -1,0 +1,281 @@
+.simplify {
+    position: relative;
+    z-index: 1;
+
+    .section-title {
+        margin-top: 0;
+        line-height: 55px;
+        margin-bottom: 50px;
+        padding-top: 60px;
+    }
+
+    .simplify-bg-wrap {
+        height: 700px;
+        position: relative;
+
+        .simplify-left-bg-mobile,
+        .simplify-left-bg {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            height: 570px;
+            width: 45vw;
+            z-index: 1;
+            object-fit: cover;
+        }
+
+        .simplify-right-bg {
+            position: absolute;
+            right: 0;
+            width: 60vw;
+            height: 700px;
+            z-index: 0;
+        }
+    }
+
+    .wrap-simplify {
+        display: flex;
+        align-self: center;
+        height: 700px;
+
+        .right-part {
+            display: flex;
+            align-self: center;
+            z-index: 1;
+
+
+            .wrap-points {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-around;
+                height: 570px;
+                padding: 50px 0;
+
+                &__block {
+                    display: flex;
+
+                    &__icon {
+                        margin-right: 50px;
+                    }
+
+                    &__text {
+                        color: $blue;
+                        font-size: 15px;
+
+                        &__title {
+                            font-size: 32px;
+                            line-height: 32px;
+                            font-weight: 900;
+                            max-width: 360px;
+                            margin-bottom: 15px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+
+}
+
+.maritimo-page .simplify {
+    .simplify-left-bg-mobile {
+        display: none;
+    }
+}
+
+.registro-page .simplify,
+.logistica-page .simplify,
+.commerce-page .simplify,
+.blog-page .simplify,
+.contacto-page .simplify,
+.ferroviario-page .simplify,
+.maritimo-page .simplify,
+.aereo-page .simplify,
+.terrestre-page .simplify,
+.courier-page .simplify {
+    padding-bottom: 100px;
+}
+
+@media screen and (max-width: 1200px) {
+    .simplify .section-title {
+        line-height: 42px;
+
+    }
+
+    .registro-page .simplify,
+    .logistica-page .simplify,
+    .commerce-page .simplify,
+    .blog-page .simplify,
+    .contacto-page .simplify,
+    .ferroviario-page .simplify,
+    .maritimo-page .simplify,
+    .aereo-page .simplify,
+    .terrestre-page .simplify,
+    .courier-page .simplify {
+        padding-bottom: 70px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    .registro-page .simplify,
+    .logistica-page .simplify,
+    .commerce-page .simplify,
+    .blog-page .simplify,
+    .contacto-page .simplify,
+    .ferroviario-page .simplify,
+    .maritimo-page .simplify,
+    .aereo-page .simplify,
+    .terrestre-page .simplify,
+    .courier-page .simplify {
+        padding-bottom: 0px;
+    }
+
+    .simplify .section-title {
+        margin-bottom: 50px;
+    }
+
+    .simplify .wrap-simplify,
+    .simplify .simplify-bg-wrap {
+        min-height: 1000px;
+        height: 100%;
+    }
+
+    .simplify .wrap-simplify {
+        flex-direction: column;
+    }
+
+    .simplify .wrap-simplify .left-part,
+    .simplify .wrap-simplify .right-part {
+        width: 100%;
+    }
+
+    .simplify .wrap-simplify .right-part {
+        justify-content: center;
+    }
+
+    .simplify .wrap-simplify .left-part {
+        min-height: 400px;
+    }
+
+    .simplify .simplify-bg-wrap .simplify-right-bg {
+        position: absolute;
+        // right: 10px;
+        // width: calc(100% - 20px);
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+
+    .maritimo-page .simplify .simplify-bg-wrap .simplify-left-bg-mobile {
+        display: block;
+    }
+
+    .maritimo-page .simplify .simplify-bg-wrap .simplify-left-bg-mobile,
+    .simplify .simplify-bg-wrap .simplify-left-bg {
+        top: 0;
+        transform: unset;
+        left: 0;
+        width: 100%;
+        height: 400px;
+    }
+
+    .maritimo-page .simplify .simplify-bg-wrap .simplify-left-bg {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .simplify .section-title {
+        padding-top: 30px;
+        margin-bottom: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+}
+
+@media screen and(max-width: 576px) {
+
+
+
+    .simplify .section-title {
+        line-height: 36px;
+    }
+
+    .simplify .wrap-simplify .right-part .wrap-points {
+        height: 100%;
+    }
+
+    .simplify .wrap-simplify .right-part .wrap-points {
+        align-items: center;
+    }
+
+    .simplify .wrap-simplify .right-part .wrap-points__block {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 50px;
+
+        &__icon {
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
+
+        &__text {
+            &__title {
+                font-size: 24px;
+                line-height: 24px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            &__desc {
+                font-size: 14px;
+                line-height: 18px;
+                font-weight: 500;
+            }
+        }
+
+    }
+
+    .simplify .wrap-simplify .right-part .wrap-points {
+        padding-bottom: 0;
+    }
+
+}
+
+@media screen and(max-width: 480px) {
+    .simplify .section-title {
+        line-height: 30px;
+    }
+
+    .simplify .wrap-simplify .right-part .wrap-points__block__text__title {
+        font-size: 20px;
+        max-width: 264px;
+    }
+
+    .simplify .wrap-simplify .right-part .wrap-points__block__icon {
+        margin-bottom: 20px;
+    }
+
+    .simplify .wrap-simplify .right-part .wrap-points__block__text__desc {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .maritimo-page .simplify .simplify-bg-wrap .simplify-left-bg-mobile,
+    .simplify .simplify-bg-wrap .simplify-left-bg {
+        height: 300px;
+    }
+
+    .simplify .wrap-simplify .left-part {
+        min-height: 300px;
+    }
+}

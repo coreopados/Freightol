@@ -1,0 +1,132 @@
+.section-privileges {
+    .wrap-with-img {
+        text-align: center;
+        padding-bottom: 100px;
+
+        >img {
+            position: relative;
+            z-index: 1;
+        }
+
+        .wrap-privileges {
+            background-color: #fff;
+            padding: 100px 50px 0;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(150px, 1fr));
+            grid-gap: 50px 40px;
+            margin-bottom: 100px;
+            position: relative;
+
+
+            &__block {
+
+                &__img {
+
+                    margin-bottom: 50px;
+
+                    svg {
+                        min-height: 100px;
+                    }
+                }
+
+                &__text {
+                    font-size: 24px;
+                    font-weight: 900;
+                    letter-spacing: 0;
+                    line-height: 32px;
+                    text-align: center;
+                }
+            }
+        }
+
+        .wrap-privileges:after {
+            content: '';
+            width: 100%;
+            height: 430px;
+            background: #fff;
+            position: absolute;
+            display: block;
+            bottom: -430px;
+        }
+    }
+
+
+}
+
+
+@media screen and (max-width: 1200px) {
+    .section-privileges .wrap-with-img .wrap-privileges {
+        grid-gap: 40px;
+        padding-top: 70px;
+        margin-bottom: 70px;
+    }
+
+    .section-privileges .wrap-with-img .wrap-privileges__block__img {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .section-privileges .wrap-with-img .wrap-privileges {
+        justify-content: center;
+        grid-template-columns: repeat(2, minmax(150px, 350px));
+    }
+
+    .section-privileges .section-title {
+        padding: 40px 0;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .section-privileges .wrap-with-img .wrap-privileges__block__text {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .section-privileges .wrap-with-img .wrap-privileges:after {
+        // display: none;
+        height: 340px;
+        bottom: -340px;
+    }
+
+    .section-privileges .wrap-with-img {
+        // background: #fff;
+        padding-bottom: 50px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .section-privileges .wrap-with-img .wrap-privileges {
+
+        grid-template-columns: repeat(1, minmax(150px, 350px));
+
+        &__block {
+            &__img {
+
+
+                svg {
+
+                    polygon,
+                    path {
+                        fill: #06CCFF;
+                    }
+                }
+            }
+        }
+    }
+
+    .section-privileges .wrap-with-img .wrap-privileges:after {
+        height: 240px;
+        bottom: -240px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section-privileges .wrap-with-img .wrap-privileges:after {
+        height: 200px;
+        bottom: -200px;
+    }
+}

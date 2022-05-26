@@ -1,0 +1,137 @@
+.check-list-section {
+    position: relative;
+    background: #F2F2F2;
+    margin-bottom: -70px;
+
+    .picture-block {
+        height: 420px;
+        overflow: hidden;
+        position: relative;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+    }
+
+    .wrap-check-list {
+        padding: 60px 80px;
+        background: #fff;
+        position: relative;
+        display: flex;
+        position: relative;
+        top: -100px;
+        flex-wrap: wrap;
+
+
+
+        .left-part {
+            width: 40%;
+     
+        }
+
+        .right-part {
+            width: 60%;
+   
+        }
+
+        p {
+            font-size: 17px;
+            line-height: 40px;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        p:before {
+            content: '';
+            position: absolute;
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            background: url(../img/Icons/check.svg);
+            background-position: center;
+            background-size: cover;
+            top: 12px;
+            left: 0;
+        }
+
+        >p {
+            width: 100%;
+            padding-left: 0;
+            font-size: 17px;
+            letter-spacing: 0;
+            line-height: 24px;
+            margin-bottom: 40px;
+        }
+
+        >p:before {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .check-list-section .wrap-check-list {
+        // padding: 50px;
+        flex-direction: column;
+    }
+
+    .check-list-section .wrap-check-list .left-part,
+    .check-list-section .wrap-check-list .right-part {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .check-list-section .wrap-check-list {
+        padding: 50px;
+    }
+
+    .check-list-section .wrap-check-list p {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .check-list-section .wrap-check-list p {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .check-list-section .wrap-check-list p:before {
+        top: 6px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .check-list-section .wrap-check-list {
+        padding: 24px 20px;
+
+        p {
+            font-size: 14px;
+            line-height: 26px;
+            padding-left: 25px;
+        }
+    }
+
+    .check-list-section .picture-block {
+        height: 300px;
+    }
+
+    .check-list-section .wrap-check-list p:before {
+        top: 3px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .check-list-section .wrap-check-list p {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+}

@@ -1,0 +1,65 @@
+* {
+    outline: none;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+$black:#01044B;
+$blue:#01044B;
+$light-blue: #06CCFF;
+$grey:#f2f2f2;
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1280px;
+
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $blue
+}
+
+body {
+    color: $black;
+    font-family: 'Raleway', sans-serif;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    font-size: 17px;
+    line-height: 24px;
+}

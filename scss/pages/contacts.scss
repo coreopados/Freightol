@@ -1,0 +1,185 @@
+.registro-page,
+.contacto-page {
+
+    form {
+        width: 630px;
+
+
+        p {
+            display: flex;
+            margin-bottom: 20px;
+            max-width: 100%;
+
+            textarea::placeholder,
+            input::placeholder {
+                opacity: 0.3;
+                color: #01044B;
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            input:not([type='submit']) {
+                padding: 0 20px;
+                height: 62px;
+                width: 300px;
+                border: 1px solid #C9C7C7;
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            input:not([type='submit']):first-of-type {
+                margin-right: 30px;
+            }
+
+            textarea {
+                padding-top: 20px;
+                height: 62px;
+                resize: none;
+                width: 100%;
+                border: 1px solid #C9C7C7;
+                padding-left: 20px;
+                font-weight: 500;
+            }
+        }
+
+
+        .button {
+            border: 0;
+            cursor: pointer;
+            margin-left: auto;
+        }
+    }
+
+    .text-block {
+        form {
+            p {
+                max-width: 630px;
+            }
+        }
+
+        .contacts-adress {
+            .phone-number {
+                margin-bottom: 5px;
+
+                img {
+                    margin-right: 10px;
+                    position: relative;
+                    top: 3px;
+                }
+            }
+
+            .mail-adress {
+                img {
+                    margin-right: 10px;
+                    position: relative;
+                    top: 1px;
+                }
+            }
+
+            .phone-number:hover,
+            .mail-adress:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .contacto-page form {
+        width: 500px;
+    }
+
+
+
+    .contacto-page form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .contacto-page .title-block .text-block {
+        grid-column-gap: 100px;
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contacto-page form {
+        order: 2;
+    }
+
+    .contacto-page form .button {
+        margin-right: auto;
+    }
+
+    .contacto-page form p input:not([type='submit']) {
+        width: 100%;
+    }
+
+    .contacto-page .text-block form p {
+        max-width: 100%;
+    }
+
+    .contacto-page .title-block .text-block {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .contacto-page form p {
+        flex-direction: column;
+        margin-bottom: 0;
+
+        input {
+            margin-bottom: 15px;
+        }
+    }
+
+    textarea::placeholder,
+    input::placeholder {
+        font-size: 14px;
+    }
+
+    .contacto-page .text-block .contacts-adress .phone-number {
+        margin-bottom: 10px;
+    }
+
+    .contacto-page form p textarea {
+        padding-top: 15px;
+    }
+
+    .contacto-page form p textarea,
+    .contacto-page form p input:not([type='submit']) {
+        height: 50px;
+        margin-right: 0;
+        font-size: 14px;
+    }
+
+    .contacto-page form .button {
+        margin-top: 20px;
+    }
+
+    .contacto-page .text-block .contacts-adress .phone-number a,
+    .contacto-page .text-block .contacts-adress .mail-adress a {
+        font-size: 14px;
+    }
+
+    .contacto-page .title-block .text-block {
+        margin-bottom: 0;
+    }
+
+    .contacto-page form {
+        margin-top: 25px;
+        margin-bottom: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .contacto-page .simplify {
+        background: #fff;
+    }
+
+    .main-screen.title-block {
+        margin-bottom: 30px;
+    }
+}

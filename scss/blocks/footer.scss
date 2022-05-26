@@ -1,0 +1,217 @@
+footer {
+    background: $blue;
+    padding: 80px 0 90px;
+
+    .foot-wrap {
+        display: flex;
+
+        .subtitle {
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 0.06px;
+            line-height: 24px;
+            margin-bottom: 30px;
+            color: $light-blue;
+        }
+
+        .left-part {
+            display: flex;
+            flex-direction: column;
+
+            .hidden {
+                display: none;
+            }
+
+            .foot-logo {
+                margin-bottom: 60px;
+                display: inline-block;
+            }
+
+            .policy-links {
+                display: flex;
+                flex-direction: column;
+
+
+                a {
+                    opacity: 0.5;
+                    color: #FFFFFF;
+                    font-family: Raleway;
+                    font-size: 14px;
+                    letter-spacing: 0;
+                    line-height: 27px;
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            ul {
+                margin-bottom: 50px;
+
+                li {
+                    margin-bottom: 20px;
+
+                    a {
+                        color: #fff;
+                        text-transform: uppercase;
+                        font-size: 18px;
+                        font-weight: bold;
+                        letter-spacing: 1.29px;
+                        line-height: 30px;
+                    }
+
+                    a:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                li:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+
+
+
+            .copyright {
+                opacity: 0.5;
+                color: #FFFFFF;
+                font-size: 14px;
+                letter-spacing: 1px;
+                line-height: 16px;
+                margin-top: auto;
+            }
+        }
+
+        .right-part {
+            display: flex;
+            flex-direction: column;
+            color: $light-blue;
+            padding-left: 50px;
+
+
+
+            ul {
+                margin-bottom: 50px;
+
+                li {
+                    a {
+                        color: $light-blue;
+                        font-size: 16px;
+                        line-height: 34px;
+                    }
+
+                    a:hover {
+                        text-decoration: underline;
+                    }
+
+                }
+            }
+
+            .logo-wrap {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+
+                a:first-of-type {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    footer {
+        padding: 50px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer .foot-wrap {
+        padding-bottom: 120px;
+        flex-direction: column;
+        position: relative;
+
+        .half-part {
+            width: 100%;
+
+        }
+    }
+
+    footer .foot-wrap .left-part .foot-logo {
+        margin-bottom: 0;
+    }
+
+    footer .foot-wrap .left-part .hidden {
+        display: block;
+    }
+
+    footer .foot-wrap .left-part .policy-links {
+        position: absolute;
+        margin-bottom: 0;
+        bottom: 40px;
+    }
+
+    footer .foot-wrap .left-part ul {
+        margin-bottom: 20px;
+    }
+
+    footer .foot-wrap .right-part .subtitle {
+        display: none;
+    }
+
+    footer .foot-wrap .right-part {
+        padding-left: 0;
+    }
+
+    footer .foot-wrap .left-part .copyright {
+        position: absolute;
+        bottom: 0;
+    }
+
+    footer .foot-wrap .left-part ul li {
+        margin-bottom: 10px;
+    }
+
+    footer .foot-wrap .right-part ul {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    footer {
+        padding: 30px 0;
+    }
+
+    footer .foot-wrap .left-part .foot-logo {
+        max-width: 200px;
+    }
+
+    footer .foot-wrap .left-part .hidden {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    footer .foot-wrap .left-part ul li a {
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    footer .foot-wrap .left-part ul li {
+        margin-bottom: 5px;
+    }
+
+    footer .foot-wrap .right-part ul li a {
+        font-size: 13px;
+        line-height: 30px;
+    }
+
+    footer .foot-wrap .left-part .policy-links a {
+        font-size: 12px;
+    }
+
+    footer .foot-wrap .left-part .copyright {
+        font-size: 12px;
+    }
+}

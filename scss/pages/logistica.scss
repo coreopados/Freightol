@@ -1,0 +1,493 @@
+.logistica-page {
+    .main-screen.title-block {
+        margin-bottom: 0;
+    }
+
+    .check-list-section {
+        background: $blue;
+
+        .wrap-check-list {
+            padding: 48px;
+            padding-right: 48px;
+
+            .right-part,
+            .left-part {
+                width: 50%;
+            }
+
+            .wrap-button {
+                margin-top: 50px;
+            }
+        }
+
+        .section-title {
+            margin-top: -50px;
+            max-width: 970px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 55px;
+            padding-bottom: 150px;
+
+        }
+    }
+
+
+    .simplify .wrap-simplify .right-part {
+        display: flex;
+        flex-direction: column;
+
+        .blue-title {
+            font-size: 15px;
+            font-weight: 900;
+            letter-spacing: 0;
+            line-height: 32px;
+            color: #06CCFF;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        h4 {
+            font-size: 32px;
+            font-weight: 900;
+            letter-spacing: 0;
+            line-height: 32px;
+            margin-bottom: 20px;
+            max-width: 520px;
+            padding-right: 10px;
+        }
+
+        .check-list {
+
+            p {
+                font-size: 17px;
+                line-height: 40px;
+                position: relative;
+                padding-left: 30px;
+            }
+
+            p:before {
+                content: '';
+                position: absolute;
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                background: url(../img/Icons/check.svg);
+                background-position: center;
+                background-size: cover;
+                top: 12px;
+                left: 0;
+            }
+        }
+    }
+
+    .simplify {
+        padding-top: 60px;
+
+        .wrap-simplify {
+            height: 600px;
+        }
+
+        .container {
+            overflow: hidden;
+            position: relative;
+
+            .simplify-right-bg {
+                max-width: 750px;
+                width: 100%;
+                right: 20px;
+                height: 600px;
+            }
+
+        }
+    }
+
+    .simplify .simplify-bg-wrap {
+        height: 600px;
+
+        .wrap-simplify {
+            background: #fff;
+
+        }
+    }
+
+
+
+    .simplify .simplify-bg-wrap:first-of-type,
+    .simplify .simplify-bg-wrap:last-of-type {
+        .wrap-simplify {
+            background: none;
+        }
+    }
+
+    .simplify .simplify-bg-wrap .simplify-left-bg {
+        width: 46vw;
+        height: 465px;
+    }
+
+    .simplify .simplify-bg-wrap:nth-of-type(even) .wrap-simplify {
+        flex-direction: row-reverse;
+
+        .right-part {
+            padding-left: 120px;
+        }
+    }
+
+    .simplify .simplify-bg-wrap:nth-of-type(even) {
+        .simplify-left-bg {
+            right: 0;
+            left: unset;
+        }
+    }
+
+
+
+    .simplify .simplify-bg-wrap:first-of-type .left-part,
+    .simplify .simplify-bg-wrap:last-of-type .left-part {
+        position: relative;
+    }
+
+    .simplify .simplify-bg-wrap:first-of-type .left-part:after {
+        content: '';
+        width: 100%;
+        height: 300px;
+        bottom: 0;
+        left: 0;
+        background: #fff;
+        position: absolute;
+    }
+
+    .simplify .simplify-bg-wrap:last-of-type .left-part:after {
+        content: '';
+        width: 100%;
+        height: 300px;
+        top: 0;
+        left: 0;
+        background: #fff;
+        position: absolute;
+    }
+
+
+    .section-privileges {
+        padding-top: 70px;
+
+        .wrap-with-img {
+            .wrap-privileges {
+                background: transparent;
+                margin-bottom: 0;
+
+                svg {
+
+                    path,
+                    polygon {
+                        fill: #fff;
+                    }
+                }
+            }
+
+            .wrap-privileges:after {
+                display: none;
+            }
+        }
+    }
+
+
+    .section-tab {
+        .section-title {
+            padding-top: 80px;
+            padding-bottom: 44px;
+        }
+
+        .tabs-text {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 40px;
+            margin-bottom: 75px;
+            justify-content: center;
+
+            p {
+                padding-left: 60px;
+                max-width: 520px;
+
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 26px;
+            }
+        }
+
+        .tabs__links__link {
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 80px;
+        }
+    }
+
+    .section-tab-picture {
+        padding-bottom: 200px;
+    }
+
+
+    .simplify .simplify-bg-wrap:first-of-type .simplify-left-bg {
+        object-position: right;
+    }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+
+    .logistica-page .check-list-section .wrap-check-list .right-part,
+    .logistica-page .check-list-section .wrap-check-list .left-part {
+        width: 100%;
+    }
+
+    .logistica-page .simplify .simplify-bg-wrap:nth-of-type(even) .wrap-simplify .right-part {
+        padding-left: 60px;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 991px) {
+
+
+
+    .logistica-page .check-list-section .section-title {
+        line-height: 43px;
+    }
+
+    .logistica-page .simplify .simplify-bg-wrap .simplify-left-bg {
+        width: 100%;
+    }
+
+    .logistica-page .simplify .wrap-simplify .left-part,
+    .logistica-page .simplify .simplify-bg-wrap .simplify-left-bg {
+        height: 400px;
+    }
+
+    .logistica-page .simplify .container .simplify-right-bg {
+        width: 100vw;
+        display: block;
+    }
+
+    .logistica-page .simplify .simplify-bg-wrap:nth-of-type(even) .wrap-simplify {
+        flex-direction: column;
+    }
+
+    .logistica-page .simplify .container .simplify-right-bg {
+        width: 100vw;
+        display: block;
+        right: 0;
+        bottom: 0;
+        max-width: 100vw;
+    }
+
+    .logistica-page .simplify .simplify-bg-wrap:nth-of-type(even) .wrap-simplify .right-part {
+        padding-left: 0;
+    }
+
+    .logistica-page .simplify .wrap-simplify .right-part {
+        max-width: 600px;
+        margin-top: 50px;
+    }
+
+    .logistica-page .simplify {
+        padding-top: 0;
+
+    }
+
+
+
+    .simplify .wrap-simplify,
+    .simplify .simplify-bg-wrap {
+        min-height: 100%;
+    }
+
+    .logistica-page .simplify .simplify-bg-wrap,
+    .logistica-page .simplify .wrap-simplify {
+        height: 100%;
+    }
+
+    .logistica-page .simplify .wrap-simplify .right-part {
+        margin-bottom: 50px;
+    }
+
+    .logistica-page .simplify .wrap-simplify .right-part,
+    .logistica-page .simplify .simplify-bg-wrap:nth-of-type(even) .wrap-simplify .right-part {
+        padding-left: 15px;
+    }
+
+    .logistica-page .simplify .wrap-simplify .left-part {
+        min-height: unset;
+    }
+
+    .logistica-page .section-privileges .wrap-with-img .wrap-privileges,
+    .logistica-page .section-privileges {
+        padding-top: 40px;
+    }
+
+    .section-privileges .wrap-with-img .wrap-privileges {
+        grid-gap: 50px;
+    }
+
+    .logistica-page .section-tab .tabs__links__link {
+        font-size: 16px;
+    }
+
+
+    .logistica-page .section-tab .tabs-text p {
+        padding-left: 0;
+        font-size: 16px;
+    }
+
+    .logistica-page .section-tab .section-title {
+        padding-top: 50px;
+        padding-bottom: 35px;
+    }
+
+    .logistica-page .section-tab .tabs-text {
+        margin-bottom: 40px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .logistica-page .section-tab-picture {
+        padding-bottom: 110px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .logistica-page .check-list-section .section-title {
+        line-height: 32px;
+        padding-top: 0;
+        padding-bottom: 110px;
+        max-width: 270px;
+    }
+
+    .logistica-page .check-list-section .wrap-check-list>p {
+        padding-left: 0;
+        margin-bottom: 20px;
+        line-height: 20px;
+    }
+
+    .logistica-page .check-list-section .wrap-check-list {
+        padding: 24px 20px;
+
+    }
+
+    .logistica-page .simplify .wrap-simplify .left-part,
+    .logistica-page .simplify .simplify-bg-wrap .simplify-left-bg {
+        height: 300px;
+    }
+
+    .logistica-page .check-list-section .wrap-check-list .wrap-button {
+        margin-top: 30px;
+    }
+
+    .logistica-page .simplify .wrap-simplify .right-part .check-list p:before {
+        top: 4px;
+    }
+
+    .logistica-page .simplify .simplify-bg-wrap .simplify-left-bg {
+        height: 300px;
+    }
+
+
+    .logistica-page .simplify .wrap-simplify .right-part .check-list p {
+        font-size: 16px;
+        line-height: 36px;
+        position: relative;
+        padding-left: 30px;
+    }
+
+    .logistica-page .simplify .wrap-simplify .right-part .check-list p:before {
+        top: 9px;
+    }
+
+    .logistica-page .simplify .wrap-simplify .right-part {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .logistica-page .section-privileges .wrap-with-img .wrap-privileges,
+    .logistica-page .section-privileges {
+        padding-top: 0;
+    }
+
+    .logistica-page .section-tab .tabs__links__link {
+        font-size: 14px;
+        line-height: 50px;
+    }
+
+    .logistica-page .tabs__links:after,
+    .logistica-page .tabs__links {
+        min-width: 650px;
+    }
+
+
+    .logistica-page .section-tab .tabs-text {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px
+    }
+
+    .logistica-page .section-tab .section-title {
+        padding-top: 44px;
+        padding-bottom: 30px;
+    }
+
+    .logistica-page .section-tab .tabs-text p {
+        font-size: 14px;
+    }
+
+    .logistica-page .section-tab .tabs-text {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logistica-page .check-list-section .section-title {
+        line-height: 30px;
+    }
+
+    .logistica-page .simplify .wrap-simplify .right-part .blue-title {
+        line-height: 32px;
+    }
+
+    .logistica-page .simplify .wrap-simplify .right-part .blue-title,
+    .logistica-page .simplify .wrap-simplify .right-part .check-list p {
+        font-size: 12px;
+        line-height: 26px;
+    }
+
+    .logistica-page .simplify .wrap-simplify .right-part h4 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .logistica-page .simplify .wrap-simplify .right-part .check-list p:before {
+        top: 4px;
+    }
+
+
+    .logistica-page .simplify .wrap-simplify .right-part {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
+    .logistica-page .simplify .wrap-simplify .right-part .blue-title {
+        margin-bottom: 5px;
+    }
+
+    .logistica-page .simplify .wrap-simplify .right-part h4 {
+        margin-bottom: 10px;
+    }
+
+
+    .logistica-page .section-tab .tabs-text p {
+        font-size: 13px;
+        line-height: 18px;
+    }
+}
