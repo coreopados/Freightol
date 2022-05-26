@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="83px" height="67px" viewBox="0 0 83 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Solución</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01_Freightol" transform="translate(-714.000000, -3629.000000)">
+            <g id="Group-45" transform="translate(-11.000000, 3217.000000)">
+                <g id="Group-22" transform="translate(717.000000, 405.000000)">
+                    <g id="Solución" transform="translate(0.000000, 8.000000)">
+                        <g id="Group-23">
+                            <line x1="41.5" y1="32.5" x2="9.40123457" y2="0.401234568" id="Line-4" stroke="#06CCFF" stroke-width="2" stroke-linecap="square"></line>
+                            <polygon id="Rectangle" fill="#CDF5FF" transform="translate(20.328427, 33.000000) rotate(-45.000000) translate(-20.328427, -33.000000) " points="34.3284271 19 34.3284271 47 6.32842712 47"></polygon>
+                            <line x1="41.5" y1="32.5" x2="9.40123457" y2="64.5987654" id="Line-4" stroke="#06CCFF" stroke-width="2" stroke-linecap="square"></line>
+                        </g>
+                        <g id="Group-23" transform="translate(33.074074, 0.000000)" fill="#272966" stroke="#06CCFF" stroke-dasharray="5,4" stroke-linecap="square" stroke-width="2">
+                            <line x1="32.5" y1="32.5" x2="0.401234568" y2="0.401234568" id="Line-4"></line>
+                            <line x1="32.5" y1="32.5" x2="0.401234568" y2="64.5987654" id="Line-4"></line>
+                        </g>
+                        <g id="Group-23" transform="translate(57.148148, 0.000000)" stroke="#06CCFF" stroke-linecap="square" stroke-width="2">
+                            <line x1="32.5" y1="32.5" x2="0.401234568" y2="0.401234568" id="Line-4"></line>
+                            <line x1="32.5" y1="32.5" x2="0.401234568" y2="64.5987654" id="Line-4"></line>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

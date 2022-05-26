@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="88px" height="87px" viewBox="0 0 88 87" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>gestión</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="01_Freightol" transform="translate(-711.000000, -3447.000000)" stroke="#06CCFF" stroke-width="2">
+            <g id="Group-45" transform="translate(-11.000000, 3217.000000)">
+                <g id="Group-28" transform="translate(719.000000, 226.000000)">
+                    <g id="Group-21">
+                        <g id="gestión" transform="translate(47.261134, 47.576674) rotate(-315.000000) translate(-47.261134, -47.576674) translate(13.761134, 14.576674)">
+                            <circle id="Oval" cx="32.7928932" cy="33.2071068" r="32.5"></circle>
+                            <path d="M23.411604,24.1847816 L42.2067847,24.1847816 L42.2067847,42.9799623 L23.411604,42.9799623 L23.411604,24.1847816 Z" id="Rectangle" fill="#CDF5FF" stroke-dasharray="5,4"></path>
+                            <circle id="Oval" fill="#CDF5FF" cx="9.69048358" cy="10.1046971" r="9.39759036"></circle>
+                            <circle id="Oval" fill="#CDF5FF" cx="9.69048358" cy="56.3095164" r="9.39759036"></circle>
+                            <circle id="Oval" fill="#CDF5FF" cx="56.6784354" cy="10.1046971" r="9.39759036"></circle>
+                            <circle id="Oval" fill="#CDF5FF" cx="56.6784354" cy="56.3095164" r="9.39759036"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
